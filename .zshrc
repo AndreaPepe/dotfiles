@@ -109,8 +109,5 @@ alias vim='nvim'
 
 export PATH=$PATH:$HOME/.local/bin
 
-if [ -z "$(/usr/bin/ssh-add -L 2>/dev/null)" ]; then
-	# lifetime of 8 hours
-	ssh-add -t 8h
-fi
-
+# Required by ssh-agent.service systemd daemon
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
