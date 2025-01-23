@@ -103,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 alias ll='ls -lah'
 alias gs="git status"
 alias gl='git log --graph --oneline'
+alias gp='git push'
 alias v='nvim'
 alias nv='nvim'
 alias vim='nvim'
