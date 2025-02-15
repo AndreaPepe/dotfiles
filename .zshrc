@@ -111,6 +111,6 @@ alias vim='nvim'
 export PATH=$PATH:$HOME/.local/bin
 
 # Required by ssh-agent.service systemd daemon
-if [ -z "$SSH_AUTH_SOCK" ]; then
-    export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-fi
+# if [ -z "$SSH_AUTH_SOCK" ]; then
+#     export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+# fi
